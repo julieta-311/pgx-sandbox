@@ -1,6 +1,6 @@
 module github.com/julieta-311/pgx-sandbox
 
-go 1.19
+go 1.20
 
 require github.com/jackc/pgx/v5 v5.2.0
 
