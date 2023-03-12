@@ -44,5 +44,5 @@ jobs:
 
     - name: Test
       env:
-        CONNECTION_STRING: postgres://test:test@localhost:5432/postgres?sslmode=disable
+        POSTGRES_URL: postgres://test:test@localhost:5432/postgres?sslmode=disable
       run:  go test -v -cover -p 1 ./...
