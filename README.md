@@ -1,7 +1,6 @@
 # pgx-sandbox
 
-Playing around with pgx v5 and squirrel, nothing too interesting yet as for now it's
-like a script inserting a thing into the db.
+Playing around with pgx v5 and squirrel, nothing too interesting to see.
 
 Requirements:
 
@@ -25,8 +24,8 @@ How to run:
 Note that running `docker stop sandbox` or `./stop_and_rm_db.sh` will delete de instance
 along with any test data that was added.
 
-* Run it:
+* How to run the test:
 
 ```
-POSTGRES_URL=postgres://postgres@localhost:5432/pgxsandbox go run .
+POSTGRES_URL=postgres://postgres@localhost:5432/pgxsandbox go test .
 ```
