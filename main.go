@@ -23,7 +23,7 @@ func (d *db) ExecContext(ctx context.Context, query string, args ...any) (_ sql.
 	if err != nil {
 		return nil, fmt.Errorf("failed to begin transaction: %w", err)
 	}
-	defer tx.Rollback(ctx)
+	defer tx.Rollback(ctx) // nolint:errcheck
 
 	_, err = tx.Exec(ctx, query, args...)
 	if err != nil {
