@@ -1,6 +1,6 @@
 module github.com/julieta-311/pgx-sandbox
 
-go 1.25.0
+go 1.26
 
 require (
 	github.com/Masterminds/squirrel v1.5.4
